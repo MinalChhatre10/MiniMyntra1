@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Pricing</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        img {
+            width: 120px;
+            z-index: 2;
+        }
+
+        .pcard {
+
+            background-color: white;
+            box-sizing: border-box;
+            padding: 0px 20px;
+            height: 88vh;
+            box-shadow: 6px 0px 5px rgba(0, 0, 0, 0.1), -6px 0px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #card-2 {
+            height: 93vh;
+            z-index: 2;
+        }
+
+        #card-1 {
+            z-index: 1;
+            position: relative;
+            left: 12px;
+        }
+
+        #card-3 {
+            z-index: 1;
+            position: relative;
+            right: 12px;
+        }
+
+        #cld1,
+        #cld2,
+        #cld3 {
+            width: 100px;
+            position: relative;
+            top: 32px;
+            z-index: 1;
+        }
+
+        #cld2 {
+            top: 18px;
+        }
+
+        #cld1 {
+            right: 98px;
+        }
+
+        #cld3 {
+            left: 98px;
+        }
+
+        #pop {
+            position: absolute;
+            background-color: yellow;
+            padding: 4px 24px;
+            border-radius: 20px;
+            transform: rotate(45deg);
+            top: 59px;
+            left: 740px;
+        }
+
+        #cycle,
+        #bike {
+            zoom: 1.1;
+            position: relative;
+            bottom: 25px;
+        }
+
+        #scooter {
+            position: relative;
+            bottom: 25px;
+        }
+
+        h2 {
+            position: relative;
+            bottom: 12px;
+            font-size: 1.5em;
+            color: #111;
+        }
+
+        .subt {
+            color: #444;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            bottom: 45px;
+        }
+
+        .mark {
+            color: green;
+            font-weight: bolder;
+            zoom: 1.3;
+        }
+
+        .cmark {
+            color: red;
+            font-weight: bolder;
+            zoom: 1.3;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .pc {
+            font-size: 20px;
+            position: relative;
+            bottom: 38px;
+
+        }
+
+        strong {
+            font-weight: bold;
+            font-size: 45px;
+
+        }
+
+        button {
+            background-color: #1D91FF;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 17px;
+            position: relative;
+            bottom: 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0079eb;
+        }
+
+        p {
+            font-size: 11px;
+            color: #888;
+            position: relative;
+            bottom: 25px;
+        }
+
+        ul {
+            position: relative;
+            bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pcard" id="card-1">
+            <img src="clouds.png" alt="" id="cld1">
+            <img src="scooter.png" alt="" id="scooter">
+            <h2>LITE PLAN</h2>
+            <p class="subt">Indivisuals and small teams</p>
+            <span class="pc"><sup>$</sup><strong>9</strong><sub>/month</sub></span>
+            <button class="select">Select</button>
+            <p>14 days money back gaurantee</p>
+            <ul>
+                <li><span class="mark">&check;</span> Clean and Easy to use app</li>
+                <li><span class="mark">&check;</span> Simple Widget Generator</li>
+                <li><span class="cmark">&cross;</span> Neat dashboard with settings</li>
+                <li><span class="cmark">&cross;</span> Helpful Live suppurt</li>
+            </ul>
+        </div>
+        <div class="pcard" id="card-2">
+            <span id="pop">POPULAR</span>
+            <img src="clouds.png" alt="" id="cld2">
+            <img src="cycle.png" alt="" id="cycle">
+            <h2>PRO PLAN</h2>
+            <p class="subt">Growing Business</p>
+            <span class="pc"><sup>$</sup><strong>19</strong><sub>/month</sub></span>
+            <button class="select">Select</button>
+            <p>14 days money back gaurantee</p>
+            <ul>
+                <li><span class="mark">&check;</span> Clean and Easy to use app</li>
+                <li><span class="mark">&check;</span> Simple Widget Generator</li>
+                <li><span class="mark">&check;</span> Neat dashboard with settings</li>
+                <li><span class="cmark">&cross;</span> Helpful Live suppurt</li>
+            </ul>
+        </div>
+        <div class="pcard" id="card-3">
+            <img src="clouds.png" alt="" id="cld3">
+            <img src="bike.png" alt="" id="bike">
+            <h2>ENTERPRISE PLAN</h2>
+            <p class="subt">Advanced Companies</p>
+            <span class="pc"><sup>$</sup><strong>29</strong><sub>/month</sub></span>
+            <button class="select">Select</button>
+            <p>14 days money back gaurantee</p>
+            <ul>
+                <li><span class="mark">&check;</span> Clean and Easy to use app</li>
+                <li><span class="mark">&check;</span> Simple Widget Generator</li>
+                <li><span class="mark">&check;</span> Neat dashboard with settings</li>
+                <li><span class="mark">&check;</span> Helpful Live suppurt</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
